@@ -23,7 +23,7 @@ public class SodaController {
         return new ResponseEntity(SodaDto.builder().build(),HttpStatus.CREATED);
     }
 
-    @PutMapping("{/sodaId}")
+    @PutMapping("/{sodaId}")
     public ResponseEntity updateSodaById (@PathVariable UUID sodaId, @RequestBody SodaDto sodaDto){
 
         //Todo Impl
