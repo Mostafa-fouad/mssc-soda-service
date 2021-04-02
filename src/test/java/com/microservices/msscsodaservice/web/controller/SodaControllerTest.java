@@ -20,13 +20,15 @@ class SodaControllerTest {
 
     @Autowired
     MockMvc mockMvc;
+
     @Autowired
     ObjectMapper objectMapper;
 
     @Test
     void getSodaById() throws Exception {
-        mockMvc.perform(get("/api/v1/soda/"+ UUID.randomUUID().toString()).accept(MediaType.APPLICATION_JSON))
-        .andExpect(status().isOk());
+        mockMvc.perform(get("/api/v1/soda/"+ UUID.randomUUID().toString())
+                .accept(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk());
     }
 
     @Test
