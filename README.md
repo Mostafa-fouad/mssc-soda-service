@@ -7,3 +7,5 @@ Spring Boot microservice example
  add more sentences
  changes for the new branch
  Test Rebase from master side ££2
+## Test the difference between Rebase and Merge
+
